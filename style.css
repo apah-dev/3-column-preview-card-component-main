@@ -1,0 +1,132 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+  --BrightOrange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhiteparagraphs: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--Verylightgray);
+  min-height: 100vh;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+
+main {
+  width: 75%;
+  margin: 100px auto;
+}
+
+.car-images {
+  width: 12%;
+}
+
+h1,
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.5rem;
+  color: var(--Verylightgray);
+}
+
+p {
+  color: var(--Transparentwhiteparagraphs);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--Verylightgray);
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.first button {
+  color: var(--BrightOrange);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.second button {
+  color: var(--Darkcyan);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.third button {
+  color: var(--Verydarkcyan);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.first,
+.second,
+.third,
+button:hover {
+  background-color: inherit;
+  color: var(--Transparentwhiteparagraphs);
+  border: solid 0.1rem white;
+  cursor: pointer;
+}
+
+.first {
+  background-color: var(--BrightOrange);
+  padding: 2rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border: none;
+}
+
+.second {
+  background-color: var(--Darkcyan);
+  padding: 2rem;
+  border: none;
+}
+
+.third {
+  background-color: var(--Verydarkcyan);
+  padding: 2rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--Verydarkcyan);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 60rem) {
+  main {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  .first {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+  }
+
+  .third {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+  }
+}
