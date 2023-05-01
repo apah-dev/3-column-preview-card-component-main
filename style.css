@@ -43,7 +43,8 @@ p {
   font-size: 1rem;
 }
 
-button {
+
+ button {
   background-color: var(--Verylightgray);
   border: none;
   margin-top: 1rem;
@@ -53,21 +54,20 @@ button {
   padding-right: 1.5rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .first button {
   color: var(--BrightOrange);
-  font-family: "Lexend Deca", sans-serif;
+
 }
 
 .second button {
   color: var(--Darkcyan);
-  font-family: "Lexend Deca", sans-serif;
 }
 
 .third button {
   color: var(--Verydarkcyan);
-  font-family: "Lexend Deca", sans-serif;
 }
 
 .first,
@@ -79,6 +79,7 @@ button:hover {
   border: solid 0.1rem white;
   cursor: pointer;
 }
+
 
 .first {
   background-color: var(--BrightOrange);
